@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.nav{
+    background-image: linear-gradient(to right, rgb(139, 23, 13) ,rgb(31, 6, 1));
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+.name{
+    font-family:Comfortaa;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.nav ul{
+    align-items:center ;
+    font-size: 15px;
+    font-family:Zalando Sans Expanded;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.intro{
+    background-image: linear-gradient(to right, rgb(139, 23, 13) ,rgb(31, 6, 1));
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro .right img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
