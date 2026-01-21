@@ -1,42 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-.nav{
-    background-image: linear-gradient(to right, rgb(139, 23, 13) ,rgb(31, 6, 1));
+.nav {
+    background: #111;
     color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
 }
-.name{
-    font-family:Comfortaa;
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin: 0 auto;
+
+}
+
+.name {
+    font-family: Comfortaa;
     font-size: 28px;
     font-weight: bold;
-    
+
 }
-.nav ul{
-    align-items:center ;
+
+.nav ul {
+    align-items: center;
     font-size: 15px;
-    font-family:Zalando Sans Expanded;
+    font-family: "Comfortaa", sans-serif;
     display: flex;
     list-style: none;
     gap: 20px;
 
 }
 
-.intro{
-    background-image: linear-gradient(to right, rgb(139, 23, 13) ,rgb(31, 6, 1));
-    height: 60vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.intro .right img{
-    width: 300px;
+.nav ul li a:hover {
+    color: #ffb3a7;
+}
+
+.intro {
+    background: linear-gradient(to bottom right, rgb(152, 21, 21), black);
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+.intro .intro-text {
+    color: white;
+    text-align: left;
+    max-width: 450px;
+    /* background-color: #fff; */
+}
+
+.intro .intro-text h1 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.intro .intro-text h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    opacity: 0.8;
+}
+
+.intro .intro-text p {
+    font-size: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    line-height: 1.6;
+}
+
+.intro .intro-img img {
+    max-width: 300px;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
