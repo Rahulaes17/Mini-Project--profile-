@@ -55,7 +55,6 @@
 }
 
 .intro {
-    /* background: linear-gradient(to bottom right, rgb(152, 21, 21), black); */
     background: linear-gradient(to bottom, rgb(152, 21, 21), #000 85%);
     min-height: 60vh;
     display: flex;
@@ -105,9 +104,7 @@
 }
 
 .about{
-    /* background: #0c0c0c; */
-        /* background: linear-gradient(to bottom right, #1a0000, #000); */
-            background: linear-gradient(to bottom, #000 85%, rgb(152, 21, 21));
+    background: linear-gradient(to bottom, #000  , rgb(152, 21, 21) 85% );
     padding: 6rem 2rem;
     box-shadow: 0 -20px 40px rgba(0,0,0,0.6) inset;
 
@@ -151,3 +148,54 @@
     
 }
 
+.skills{
+    background: linear-gradient(to bottom, rgb(152, 21, 21), #000 85%);
+    padding: 6rem 2rem;
+        /* box-shadow: 0 20px 40px rgb(152, 21, 21) inset; */
+}
+
+.skills .my-skills{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skills .my-skills h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.skills .my-skills h2{
+    font-size: 1.4rem;
+    font-family: "Comfortaa", sans-serif;  
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
+.skills .my-skills .skills-grid{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+    /* repeat(5,1fr); */
+    gap:1.5rem;
+
+}
+
+.skill{
+    border: 2px solid black;
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    background: #111;
+    font-family: "Comfortaa", sans-serif;    
+    transition: 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background: #1a1a1a;
+    border-color: #333;
+}
