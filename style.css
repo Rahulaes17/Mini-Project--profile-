@@ -7,6 +7,9 @@
 .nav {
     background: #111;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -66,6 +69,7 @@
     color: white;
     text-align: left;
     max-width: 450px;
+    animation: fadeUp 0.8s ease-out;
 }
 
 .intro .intro-text h1 {
@@ -193,7 +197,7 @@
     font-family: "Comfortaa", sans-serif;
     transition: 0.3s ease;
     box-shadow: 0 0 10px rgba(150, 0, 0, 0.2);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
 }
 
 .skill:hover {
@@ -240,7 +244,7 @@
 
 .service img {
     max-width: 150px;
-    width: 50px;
+    width: 70px;
     height: 50px;
     object-fit: contain;
     filter: brightness(85%);
@@ -626,4 +630,95 @@
     100% {
         transform: translateY(0px);
     }
+}
+
+.footer{
+    background: linear-gradient(to bottom,#150000, #000);
+    padding: 3rem 1rem;
+    color:white;
+    /* margin-top: 4rem; */
+}
+
+.footer-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    background:rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.footer-name h2{
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.9;
+}
+
+.footer-name p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.footer-socials {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.footer-socials img {
+    width: 35px;
+    opacity: 0.75;
+    transition: 0.3s ease;
+    background: rgba(255,255,255,0.05);
+    padding: 8px;
+    border-radius: 50%;
+    backdrop-filter: blur(6px);
+}
+
+.footer-socials img:hover {
+    opacity: 1;
+    transform: scale(1.15);
+    background: rgba(255,255,255,0.15);
+}
+
+.footer-copy {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    font-family: "Comfortaa", sans-serif;
+    opacity: 0.6;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 12px rgba(255, 40, 40, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 0 18px rgba(255, 50, 50, 0.6);
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
 }
